@@ -4,8 +4,8 @@ export const Wolf = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="46"
-      height="28"
+      width="30"
+      height="30"
       viewBox="0 0 4678 2824"
     >
       <path
