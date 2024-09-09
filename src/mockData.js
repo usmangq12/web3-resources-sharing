@@ -7,6 +7,7 @@ const mockData = [
     id: 1,
     player: "PlayerOne",
     isLoggedIn: true,
+    address: "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
     resources: {
       wool: { icon: Wool, amount: 100 },
       sheep: { icon: Sheep, amount: 200 },
@@ -20,6 +21,7 @@ const mockData = [
     id: 2,
     player: "PlayerTwo",
     isLoggedIn: false,
+    address: "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
     resources: {
       wool: { icon: Wool, amount: 150 },
       sheep: { icon: Sheep, amount: 15 },

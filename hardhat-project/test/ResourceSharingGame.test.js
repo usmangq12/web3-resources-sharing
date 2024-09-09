@@ -68,7 +68,6 @@ describe("ResourceSharingGame", function () {
       await resourceSharingGame.login();
       await resourceSharingGame.connect(addr1).login();
 
-      // Share wool from owner to addr1
       await resourceSharingGame.shareResources(addr1.address, "wool", 10);
       const ownerPlayer = await resourceSharingGame.players(owner.address);
       const addr1Player = await resourceSharingGame.players(addr1.address);
