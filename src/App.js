@@ -133,7 +133,7 @@ function App() {
       console.error("Error sharing resources:", error);
       setTransactions((prevTransactions) => [
         ...prevTransactions,
-        `Failed to give ${amount} ${resourceType}: ${error.message}`,
+        `Failed Transactions`,
       ]);
     } finally {
       setLoading(false);
