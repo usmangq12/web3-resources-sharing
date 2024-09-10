@@ -122,6 +122,7 @@ function ResourceSharing({ players, loggedInPlayer, onShare, onClose }) {
         onChange={(e) => setAmount(e.target.value)}
         sx={{ width: "100%", marginTop: "12px" }}
         type="number"
+        InputProps={{ inputProps: { min: 0 } }}
       />
 
       <Button

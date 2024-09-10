@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Resource Sharing Game DApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A decentralized application (DApp) where users can share resources (wool, sheep, wolves, grass, farmers, land) with each other on the Ethereum blockchain. The game is powered by smart contracts written in Solidity and deployed using Hardhat. The frontend interacts with these smart contracts via the `ethers.js` library, allowing players to log in, register, and share resources in a secure and decentralized manner.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Smart Contract Overview](#smart-contract-overview)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Deploying Contracts](#deploying-contracts)
+- [Running the Application](#running-the-application)
+- [Interacting with the Smart Contract](#interacting-with-the-smart-contract)
+- [License](#license)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Registration**: Users can register with default resources.
+- **Login/Logout**: Registered users can log in and log out.
+- **Share Resources**: Players can share specific resources like wool, sheep, wolves, and more.
+- **Resource Management**: Players can view and add resources through the DApp.
+- **Smart Contract-Powered**: All interactions are powered by a Solidity smart contract.
+- **Blockchain Transactions**: All transactions are recorded securely on the Ethereum blockchain.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Frontend:
+- **React**: JavaScript library for building user interfaces.
+- **Material-UI**: React component library for UI design.
+- **ethers.js**: JavaScript library for interacting with the Ethereum blockchain.
+- **MetaMask**: Browser extension for Ethereum account management.
 
-### `npm test`
+### Backend:
+- **Solidity**: Language used for writing Ethereum smart contracts.
+- **Hardhat**: Development environment for Ethereum for deploying and testing smart contracts.
+- **Ethereum**: The decentralized platform the DApp is built on.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Smart Contract Overview
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The `ResourceSharingGame` contract defines the core functionality of the game, including:
+- **Player Registration**: Players are registered with a default set of resources like wool, sheep, etc.
+- **Resource Sharing**: Players can share resources with other registered players.
+- **Resource Management**: Players can add resources to their account.
+- **Events**: Smart contract emits events such as `PlayerRegistered`, `ResourceShared`, and more for tracking actions.

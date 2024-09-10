@@ -8,7 +8,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width:472,
+  width:{xs:300,sm:400,md:472},
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -17,7 +17,6 @@ const style = {
 };
 
 function ResourceSharingModal({ onClose, players, loggedInPlayer, onShare }) {
-  console.log("Resource in Modal ", players);
   return (
     <Box sx={style}>
       <ResourceSharing
