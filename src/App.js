@@ -68,7 +68,9 @@ function App() {
   const loggedInPlayer = players.find((player) => player.isLoggedIn);
 
   const handleResourceShare = async (toPlayerId, resourceType, amount) => {
-    if (!contract) return;
+    if (!contract) {
+      alert("Please connect account")
+    };
 
     setLoading(true);
 
